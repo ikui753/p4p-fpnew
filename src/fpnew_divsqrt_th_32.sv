@@ -16,7 +16,7 @@
 //          Jiang Lannan <jiangl@ethz.ch>
 //          Kexin Li <likexi@ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "C:\Users\ikui753\Documents\GitHub\P4P\core_src\p4p-cv32e40p\rtl\vendor\pulp_platform_common_cells\include\common_cells\registers.svh"
 
 module fpnew_divsqrt_th_32 #(
   // FP32-only DivSqrt

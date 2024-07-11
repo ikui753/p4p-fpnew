@@ -13,7 +13,7 @@
 
 // Author: Stefan Mach <smach@iis.ee.ethz.ch>
 
-`include "common_cells/registers.svh"
+`include "C:\Users\ikui753\Documents\GitHub\P4P\core_src\p4p-cv32e40p\rtl\vendor\pulp_platform_common_cells\include\common_cells\registers.svh"
 
 module fpnew_fma_multi #(
   parameter fpnew_pkg::fmt_logic_t   FpFmtConfig = '1,
@@ -338,7 +338,7 @@ module fpnew_fma_multi #(
         // Special cases involving infinity
         end else if (any_operand_inf) begin
           fmt_result_is_special[fmt] = 1'b1; // bypass FMA
-          // Effective addition of opposite infinities (±inf - ±inf) is invalid!
+          // Effective addition of opposite infinities (Â±inf - Â±inf) is invalid!
           if ((info_a.is_inf || info_b.is_inf) && info_c.is_inf && effective_subtraction)
             fmt_special_status[fmt].NV = 1'b1; // invalid operation
           // Handle cases where output will be inf because of inf product input
